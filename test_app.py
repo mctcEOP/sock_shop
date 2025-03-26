@@ -21,7 +21,7 @@ def test_get_product_by_id():
     product = get_product_by_id(1)
 
     # checks the conditions matches the assertion
-    assert product and product['id'] == 1 and product['name' == 'Meme Lord']
+    assert product and product['id'] == 1 and product['name'] == 'Meme Lord'
 
     # tests that invalid products throw no errors
     assert get_product_by_id(999) is None
